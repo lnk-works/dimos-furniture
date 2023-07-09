@@ -370,3 +370,40 @@ $(function () {
 
 
 });
+
+const images = document.querySelectorAll('.container_main img');
+   const overlay = document.querySelector('.overlay-g');
+   const overlayImage = document.querySelector('#overlayg-image');
+   let currentIndex = 0;
+
+   function openOverlay(image) {
+      const src = image.src;
+      currentIndex = Array.from(images).indexOf(image);
+      overlayImage.src = src;
+      overlay.classList.add('show');
+   }
+
+   function changeImage(n) {
+      currentIndex += n;
+      if (currentIndex >= images.length) {
+         currentIndex = 0;
+      } else if (currentIndex < 0) {
+         currentIndex = images.length - 1;
+      }
+      const src = images[currentIndex].src;
+      overlayImage.src = src;
+   }
+
+   function closeOverlay() {
+      overlay.classList.remove('show');
+   }
+
+   document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape') {
+         closeOverlay();
+      } else if (event.key === 'ArrowLeft') {
+         changeImage(-1);
+      } else if (event.key === 'ArrowRight') {
+         changeImage(1);
+      }
+   });
