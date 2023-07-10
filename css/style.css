@@ -228,12 +228,13 @@ button {
     background-image: url(../images/header-bg.png);
     height: auto;
     background-size: 100%;
+    display: flex;
 }
 .bg-light {
     background-color: transparent !important;
 }
 .logo {
-    width: 25%;
+    width: 10%;
     float: left;
 }
 .navbar-light .navbar-nav .nav-link {
@@ -949,7 +950,7 @@ textarea#comment::placeholder {
 .fooer_logo {
     width: 100%;
     float: left;
-    padding-bottom: 40px;
+    
 }
 .customer_text{
     width: 100%;
@@ -1103,4 +1104,75 @@ textarea#comment::placeholder {
 
  .overlay-g .next {
     right: 10px;
+ }
+
+
+
+
+ .contact-section1 {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+ }
+
+ .contact-heading1 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+ }
+
+ .contact-form1 {
+    max-width: 500px;
+    margin: 0 auto;
+ }
+
+ .contact-input1 {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+ }
+
+ .contact-message1 {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+ }
+
+ .contact-submit1 {
+    text-align: center;
+ }
+
+ .contact-submit1 a {
+    display: inline-block;
+    background-color: #fabb25;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+ }
+
+ .contact-submit1 a:hover {
+    color: #fff;
+    background-color: #ff7b00;
+ }
+
+ @media (max-width: 768px) {
+    .contact-form1 {
+       max-width: 100%;
+       padding: 0 20px;
+    }
+
+    .contact-input1,
+    .contact-message1 {
+       width: 100%;
+    }
  }
