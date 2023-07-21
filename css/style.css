@@ -620,6 +620,16 @@ a:hover {
     text-transform: uppercase;
     font-weight: 500;
 }
+.who_taital-client{
+    margin-bottom: 15px;
+    width: 100%;
+    float: left;
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+}
 .designer_text{
     width: 100%;
     float: left;
@@ -814,7 +824,7 @@ a:hover {
 .carousel-indicators {
     justify-content: left;
     margin-left: 0%;
-    bottom: 50px;
+    bottom: -60px;
 }
 .contact_section {
     width: 100%;
@@ -1188,4 +1198,8 @@ textarea#comment::placeholder {
     right: 45px;
     bottom: 45px;
     z-index: 99;
+}
+.client-img{
+    width: 400px;
+    margin-bottom: 30px;
 }
