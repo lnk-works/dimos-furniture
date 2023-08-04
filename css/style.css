@@ -348,6 +348,21 @@ button {
     color: #ffffff;
     background-color: #000;
 }
+.contact_bt-1 a{
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: black;
+    background-color: #ffb607;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.contact_bt-1 a:hover{
+    color: #ffffff;
+    background-color: #ff9307;
+}
 
 .fa-angle-right:before {
     content: "\f105";
@@ -894,7 +909,7 @@ textarea#comment::placeholder {
     font-weight: bold;
 }
 .send_bt a:hover{
-    color: black;
+    color: #fabc26;
     background-color: #ffffff;
 }
 .image_9 {
