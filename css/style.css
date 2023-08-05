@@ -471,7 +471,7 @@ button {
 .about_section{
     width: 100%;
     float: left;
-    background-color: #ffb607;
+    background-color: white;
     height: auto;
     padding-bottom: 90px;
 }
@@ -493,6 +493,22 @@ button {
     float: left;
     font-size: 16px;
     color: #ffffff;
+    margin-left: 0px;
+    padding-top: 40px;
+}
+.about_textabt {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.lorem_textabt {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: black;
     margin-left: 0px;
     padding-top: 40px;
 }
@@ -1222,12 +1238,22 @@ textarea#comment::placeholder {
 
 .offer-btn{
     width: 100%;
-    margin: 20px;
+    margin: 30px;
     font-size: 18px;
     color: black;
     background-color: #ffb607;
     text-align: center;
-    padding: 10px 0px;
+    padding: 10px 10px;
     border-radius: 5px;
     text-transform: uppercase;
 }
+/* Add some styling for the close button */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 50px;
+    color: #fabb25;
+    cursor: pointer;
+ }
+ 

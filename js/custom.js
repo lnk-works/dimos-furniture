@@ -395,8 +395,8 @@ const images = document.querySelectorAll('.container_main img');
    }
 
    function closeOverlay() {
-      overlay.classList.remove('show');
-   }
+	overlay.classList.remove('show');
+ }
 
    document.addEventListener('keydown', function (event) {
       if (event.key === 'Escape') {
