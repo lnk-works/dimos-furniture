@@ -447,7 +447,7 @@ function handleDownloadClick1() {
 function handleDownloadClick2() {
     const pdfFilePath2 = '../images/offers/DIMOS_NOTICE_ BACK_FINAL.pdf'; // Relative path to the second PDF file
 
-	
+
 
     const anchor = document.createElement('a');
     anchor.href = pdfFilePath2;
@@ -463,4 +463,7 @@ function handleDownloadClick2() {
 
 downloadButton1.addEventListener('click', handleDownloadClick1);
 downloadButton2.addEventListener('click', handleDownloadClick2);
+
+
+
 

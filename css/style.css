@@ -1257,3 +1257,20 @@ textarea#comment::placeholder {
     cursor: pointer;
  }
  
+
+
+
+/* For computer/laptop screens */
+@media screen and (min-width: 768px) {
+    .testimonial-img {
+      width: 100%;
+    }
+  }
+  
+  /* For mobile screens */
+  @media screen and (max-width: 767px) {
+    .testimonial-img {
+      width: 20%;
+    }
+  }
+  
