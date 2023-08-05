@@ -1219,3 +1219,15 @@ textarea#comment::placeholder {
     width: 400px;
     margin-bottom: 30px;
 }
+
+.offer-btn{
+    width: 100%;
+    margin: 20px;
+    font-size: 18px;
+    color: black;
+    background-color: #ffb607;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
