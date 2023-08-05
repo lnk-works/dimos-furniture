@@ -395,8 +395,8 @@ const images = document.querySelectorAll('.container_main img');
    }
 
    function closeOverlay() {
-	overlay.classList.remove('show');
- }
+   overlay.classList.remove('show');
+}
 
    document.addEventListener('keydown', function (event) {
       if (event.key === 'Escape') {
@@ -430,8 +430,7 @@ const downloadButton2 = document.getElementById('downloadButton2');
 function handleDownloadClick1() {
     const pdfFilePath1 = '../images/offers/DIMOS_NOTICE_FRONT_FINAL.pdf'; // Relative path to the first PDF file
 
-    // Show a message indicating that the download has started
-    downloadButton1.textContent = 'Downloading File...';
+    
 
     const anchor = document.createElement('a');
     anchor.href = pdfFilePath1;
@@ -442,17 +441,13 @@ function handleDownloadClick1() {
     anchor.click();
     document.body.removeChild(anchor);
 
-    // Reset the button text after a short delay (you can adjust the delay as needed)
-    setTimeout(() => {
-        downloadButton1.textContent = 'Downloaded File';
-    }, 2000); // 2000 milliseconds (2 seconds) delay in this example
+    
 }
 
 function handleDownloadClick2() {
     const pdfFilePath2 = '../images/offers/DIMOS_NOTICE_ BACK_FINAL.pdf'; // Relative path to the second PDF file
 
-    // Show a message indicating that the download has started
-    downloadButton2.textContent = 'Downloading File...';
+	
 
     const anchor = document.createElement('a');
     anchor.href = pdfFilePath2;
@@ -463,10 +458,7 @@ function handleDownloadClick2() {
     anchor.click();
     document.body.removeChild(anchor);
 
-    // Reset the button text after a short delay (you can adjust the delay as needed)
-    setTimeout(() => {
-        downloadButton2.textContent = 'Downloaded File';
-    }, 2000); // 2000 milliseconds (2 seconds) delay in this example
+    
 }
 
 downloadButton1.addEventListener('click', handleDownloadClick1);
