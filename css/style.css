@@ -702,6 +702,31 @@ a:hover {
     color: #000;
     background-color: #ffffff;
 }
+.get_bt_main1{
+    width: 13%;
+    margin: 0 auto;
+    text-align: center;
+}
+.get_bt1 {
+    width: 100%;
+    float: left;
+    margin-top: 70px;
+}
+.get_bt1 a{
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    color: #000000;
+    background-color: #fabb25;
+    text-align: center;
+    padding: 10px 0px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+.get_bt1 a:hover{
+    color: #ffffff;
+    background-color: #f7560b;
+}
 .projects_section{
     width: 100%;
     float: left;
@@ -1274,3 +1299,11 @@ textarea#comment::placeholder {
     }
   }
   
+
+
+.foot-links{
+    color: white;
+}
+.foot-links:hover{
+    color: #fabb25;
+}
