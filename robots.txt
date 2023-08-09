@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /*
+Allow: /about
+Allow: /service
+Allow: /app
+Allow: /careers
+Allow: /gallery
+Allow: /offers
+Allow: /contact
+Allow: /privacy_policy
+Sitemap: https://dimosfurniture.in/sitemap.xml
