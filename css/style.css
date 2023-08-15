@@ -296,7 +296,7 @@ button {
     width: 100%;
     min-height: 100VH;
     float: left;
-    background-image: url(../images/hero-bg.webp);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url(../images/hero-bg.webp);
     height: auto;
     padding-bottom: 50px;
     background-size: 100%;
