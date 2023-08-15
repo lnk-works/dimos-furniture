@@ -27,6 +27,8 @@
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
       <!-- Tweaks for older IEs-->
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- Ajax Jquery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <!-- owl stylesheets --> 
       <link rel="stylesheet" href="css/owl.carousel.min.css">
       <link rel="stylesheet" href="css/owl.theme.default.min.css">
@@ -76,35 +78,25 @@
             <div class="row">
                <div class="col-md-4">
                   <h1 class="contact_text">CONTACT US</h1>
-                  <p style="color: black;" class="lorem_text1">Phone Numbers: <br>
-
-                     09037202011 <br>
-
-                     09072721033 <br>
-
-                     07025966661 <br>
-
-                     09072710030 <br>
-
-                     72930 66694 <br>
-
-                     92880 98981 <br>
+                  <p style="color: black;" class="lorem_text1">Phone Number: <a href="tel:+919288098981">+91 92880 98981</a> <br>
 
                      <br><br>
 
                   <p style="color: black;" class="lorem_text1" >Email: dimosfurniturekollam@gmail.com <br><br>
-                  <p style="color: black;" class="lorem_text1" >Address: Kilikkollur, Chandanathope, 
-                   Kottarakkara, Kerala 691004
+                  <p style="color: black;" class="lorem_text1" >Address: Bismi tower kilikkollur  Chandanathope kottamkara, <br> Kollam , kerala 691004
                </div>
                <div class="col-md-4">
                   
                   <div class="mail_sectin2">
-                     <input type="text" class="email-bt" placeholder="Name" name="Name">
-                     <input type="text" class="email-bt" placeholder="Email" name="Name">
-                     <input type="text" class="email-bt" placeholder="Phone Number" name="Name">
-                     <textarea class="massage-bt" placeholder="Message" rows="5" id="comment" name="Massage"></textarea>
-                     <div class="send_bt"><a href="#">SEND</a></div>
-                  </div>
+                     <form id="submit-form" action="" method="">
+                         <input type="text" class="email-bt" placeholder="Name" name="Name">
+                         <input type="email" class="email-bt" placeholder="Email" name="Email">
+                         <input id="Contact-Number" type="text" class="email-bt" placeholder="Phone Number" name="PhoneNumber">
+                         <textarea class="massage-bt" placeholder="Message" rows="5" id="comment" name="Message"></textarea>
+                         <div class="send_bt-ct"><button type="submit">Send</button></div>
+                     </form>
+                 </div>
+                 
                </div>
                <div class="col-md-4">
                   <div class="map-container2">
@@ -187,6 +179,42 @@
          <p class="copyright_text">Copyright &copy; 2021 Dimos Furniture All Rights Reserved. <br> Designed by <a target="_blank" href="https://linktr.ee/liyannk">LNK</a></p>
       </div>
       <!-- copyright section end -->
+
+
+
+      <!-- <script>
+         // Set the value of the phone number input field to "+91 " plus 10 zeros
+         document.getElementById("Contact-Number").value = "+91 ";
+ 
+         // Add an event listener to the phone number input field to prevent the user from deleting the "+91 " prefix
+         document.getElementById("Contact-Number").addEventListener("input", function() {
+         if (!this.value.startsWith("+91 ")) {
+         this.value = "+91 " + this.value.slice(3);
+         }
+         });
+     </script> -->
+
+
+      <script>
+         $("#submit-form").submit((e)=>{
+             e.preventDefault()
+             $.ajax({
+                 url:"https://script.google.com/macros/s/AKfycbxf13VEz_VOuvmCtoA0q9rFa36JXco7vkkSKUK2cisCRrxqDaQSaoKbrBgWb2BRndPU/exec",
+                 data:$("#submit-form").serialize(),
+                 method:"post",
+                 success:function (response){
+                     alert("Form submitted successfully")
+                     window.location.reload()
+                     //window.location.href="https://google.com"
+                 },
+                 error:function (err){
+                     alert("Something Error")
+     
+                 }
+             })
+         })
+     </script>
+
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
