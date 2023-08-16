@@ -243,10 +243,10 @@
                </div>
                <section id="download">
                <div class="contact_bt_main">
-                  <div id="downloadButton1" class="contact_bt-1"><a style="margin-bottom: 30px;" href="#noaction">Onam Brochure</a></div>
+                  <div id="pdfButton1" class="contact_bt-1"><a style="margin-bottom: 30px;" href="#noaction">Onam Brochure</a></div>
                </div> 
                <div class="contact_bt_main">
-                  <div id="downloadButton2" class="contact_bt-1"><a href="#noaction">All Offers Brochure</a></div>
+                  <div id="pdfButton2" class="contact_bt-1"><a href="#noaction">All Offers Brochure</a></div>
                </div>
                </section>
             </section>
@@ -304,6 +304,23 @@
          <p class="copyright_text">Copyright &copy; 2021 Dimos Furniture All Rights Reserved. <br> Designed by <a target="_blank" href="https://linktr.ee/liyannk">LNK</a></p>
       </div>
       <!-- copyright section end -->
+
+      <script>
+         const pdfButton1 = document.getElementById('pdfButton1');
+         const pdfButton2 = document.getElementById('pdfButton2');
+         
+         const pdfUrl1 = 'https://drive.google.com/file/d/1Q-N-63bjNJ4f_Vgo7cu3P9ku71QXGCH1/view?usp=sharing';
+         const pdfUrl2 = 'https://drive.google.com/file/d/1QvGi5HT7731MHp71QmmfgGsDpGYJhjNJ/view?usp=sharing';
+ 
+         pdfButton1.addEventListener('click', () => {
+             window.open(pdfUrl1, '_blank');
+         });
+ 
+         pdfButton2.addEventListener('click', () => {
+             window.open(pdfUrl2, '_blank');
+         });
+     </script>
+
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
